@@ -14,7 +14,7 @@
 *.config
 
 # ignore xml
-*.xml 
+*.xml
 
 # ignore Excel
 *.xls
