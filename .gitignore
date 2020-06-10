@@ -13,6 +13,16 @@
 # ignore configuration files
 *.config
 
+# ignore xml
+*.xml
+
+# ignore Excel
+*.xls
+*.xlst
+*.xlsx
+*.csv
+
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
