@@ -1,6 +1,6 @@
 #!/bin/bash
 #get commit message
-set /p git_command="Enter commit message: "
+read -p "Enter commit message: " git_command
 
 #clear repository
 git rm -r --cached .
@@ -9,7 +9,7 @@ git rm -r --cached .
 git add .
 
 #commit new information
-git commit -m %git_command%
+git commit -m "$git_command"
 
 #push new information
 git push
