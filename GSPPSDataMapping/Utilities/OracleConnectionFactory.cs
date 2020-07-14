@@ -16,8 +16,13 @@ namespace GSPPSDataMapping
         {
             get
             {
+                var appSettings = ConfigurationManager.AppSettings;
+
                 //string example = "user id=<userid>;password=<passwprd>; datasource=<hostname>/<schemaname>;";
-                string iqmsConnection = ConfigurationManager.ConnectionStrings[ConfigurationManager.AppSettings["IQMSConnection"]].ConnectionString;
+                string iqmsConnection = "user id=" + appSettings["IQMSUserID"] + "; " +
+                                        "password=" + appSettings["IQMSPassword"] + "; " +
+                                        "Data Source=" + appSettings["IQMSDataSource"] + ";";
+ 
                 OracleConnection db = new OracleConnection(iqmsConnection);
 
                 db.Open();

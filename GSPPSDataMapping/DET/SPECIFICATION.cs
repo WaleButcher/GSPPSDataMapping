@@ -61,6 +61,7 @@ namespace GSPPSDataMapping.DET
         private string motorCraftSuffix = "";//PKGEXT-MOTORCRAFT-SUFFIX
 
         private string upcCode = "";
+        private string upcCodeNumber = "";
         #endregion
 
         #region CHECK IF SPEC IS B969F
@@ -300,6 +301,11 @@ namespace GSPPSDataMapping.DET
         {
             get { return upcCode; }
             set { this.upcCode = value; }
+        }
+        public string UpcCodeNumber
+        {
+            get { return upcCodeNumber; }
+            set { this.upcCodeNumber = value; }
         }
         #endregion
 

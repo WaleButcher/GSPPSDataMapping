@@ -3,7 +3,6 @@ using System.Runtime.InteropServices;
 
 static class DisableConsoleQuickEdit
 {
-
     const uint ENABLE_QUICK_EDIT = 0x0040;
 
     // STD_INPUT_HANDLE (DWORD): -10 is the standard input device.

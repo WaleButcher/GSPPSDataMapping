@@ -333,6 +333,7 @@ namespace GSPPSDataMapping.DET
             if (uPCCode != "")
             {
                 uPCCode = uPCCode.PadLeft(11, '0');
+                pkgSpec.UpcCodeNumber = uPCCode;
                 string upc1 = "0-" + uPCCode.Substring(0, 5);
                 string upc2 = "-" + uPCCode.Substring(5, 5);
                 string upc3 = "-" + uPCCode.Substring(10, 1);
